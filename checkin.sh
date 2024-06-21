@@ -30,7 +30,7 @@ ch() {
 	content_inv=$(tail -r "$fp")
 	echo "$content_inv" > "$tmp_fp"
 
-	entry_note="- $(date "+%A %b %d, %H:%M") | "
+	entry_note="- $(date "+%H:%M") | "
 
 	echo $entry_note >> "$tmp_fp"
 	content_inv=$(tail -r "$tmp_fp")
